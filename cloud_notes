@@ -1,0 +1,226 @@
+# ☁️ TCS Prime Cloud Computing Preparation - Advanced Concepts & Interview Notes
+
+---
+
+## 🧠 Cloud Computing Fundamentals
+
+### What is Cloud Computing?
+Cloud computing is the delivery of computing services—servers, storage, databases, networking, software, analytics, intelligence—over the internet to offer faster innovation, flexible resources, and economies of scale.
+
+---
+
+## ☁️ Service Models
+
+### 1. Infrastructure as a Service (IaaS)
+- Provides virtualized computing resources over the internet.
+- Examples: AWS EC2, Azure VM, Google Compute Engine
+- You manage: OS, runtime, apps, data
+
+### 2. Platform as a Service (PaaS)
+- Provides a platform allowing users to develop, run, and manage applications without dealing with infrastructure.
+- Examples: AWS Elastic Beanstalk, Azure App Services
+- You manage: apps & data
+
+### 3. Software as a Service (SaaS)
+- Delivers software applications over the internet, managed by provider.
+- Examples: Gmail, Office 365, Salesforce
+
+---
+
+## 🧱 Deployment Models
+
+### 1. Public Cloud
+- Services offered over the public internet.
+- Shared infrastructure (e.g., AWS, Azure, GCP)
+
+### 2. Private Cloud
+- Used exclusively by a single organization.
+- Greater control and security.
+
+### 3. Hybrid Cloud
+- Combines public and private clouds.
+- Ideal for flexibility, cost-effectiveness, and compliance.
+
+### 4. Multi-Cloud
+- Use of multiple cloud providers for different services.
+- Prevents vendor lock-in and increases resilience.
+
+---
+
+## 🧮 Compute Services
+
+### AWS EC2
+- Virtual servers in the cloud.
+- Types: General (t2/t3), Compute Optimized (c5), Memory Optimized (r5)
+- Concepts: AMIs, Security Groups, EBS, Auto Scaling, Elastic IP
+
+### Azure VM
+- Azure's virtual machine offering.
+- Supports Windows/Linux with scale sets and load balancers.
+
+### AWS Lambda (Serverless)
+- Code execution without provisioning servers.
+- Event-driven, auto-scalable.
+- Use cases: data processing, real-time file handling, backend APIs.
+
+---
+
+## 🧊 Storage Services
+
+### AWS S3 (Simple Storage Service)
+- Object storage service.
+- Features: Versioning, Lifecycle rules, S3 Glacier (archival), SSE (encryption)
+- Storage classes: Standard, IA (Infrequent Access), One Zone-IA, Glacier, Glacier Deep Archive
+
+### EBS vs EFS vs FSx
+- EBS: Block storage for EC2, durable, single instance
+- EFS: Shared file storage, auto-scale, NFS-based
+- FSx: Windows/Linux file systems, performance-focused
+
+### Azure Blob Storage
+- Object storage solution.
+- Tiers: Hot, Cool, Archive
+
+---
+
+## 🌐 Networking in Cloud
+
+### Virtual Private Cloud (VPC)
+- Customizable virtual networks
+- Components: Subnets, Route Tables, NAT Gateway, IGW, Security Groups
+
+### Load Balancing
+- AWS ELB: Distributes traffic across EC2
+  - Types: ALB (Application), NLB (Network), CLB (Classic)
+- Azure Load Balancer: Layer 4; Application Gateway: Layer 7
+
+### DNS Services
+- AWS Route 53: Scalable DNS with routing policies
+- Azure DNS: DNS hosting service
+
+### Content Delivery Network (CDN)
+- AWS CloudFront / Azure CDN: Delivers content with low latency
+
+---
+
+## 🔐 Identity & Security
+
+### AWS IAM
+- Manage access to services/resources securely
+- Concepts: Users, Groups, Roles, Policies, MFA
+
+### Azure Active Directory
+- Identity management and access control
+- RBAC: Role-based Access Control
+
+### Security Tools
+- AWS KMS: Manage encryption keys
+- Security Groups: Virtual firewall at instance level
+- NACLs: Firewall at subnet level
+
+---
+
+## 🔄 DevOps & Automation
+
+### CI/CD in Cloud
+- Tools: AWS CodePipeline, CodeBuild, CodeDeploy, Azure DevOps Pipelines
+- Phases: Source → Build → Test → Deploy
+
+### Infrastructure as Code
+- AWS CloudFormation: JSON/YAML templates to provision resources
+- Terraform: Multi-cloud IaC tool
+- Azure Resource Manager (ARM): Azure’s IaC
+
+### Containers & Orchestration
+- Docker: Lightweight containers
+- Kubernetes: Cluster management for containers
+- AWS ECS/Fargate, Azure AKS (Kubernetes Service)
+
+---
+
+## 📈 Monitoring & Logging
+
+### AWS Tools
+- CloudWatch: Logs, metrics, alarms
+- CloudTrail: API call logging for auditing
+
+### Azure Tools
+- Azure Monitor: Metrics + Logs
+- Log Analytics: Query and visualize logs
+
+---
+
+## 🧵 Cloud Databases
+
+### AWS
+- RDS: Relational DB (MySQL, PostgreSQL, Oracle, SQL Server)
+- DynamoDB: NoSQL, key-value store
+- Aurora: High-performance MySQL/PostgreSQL-compatible
+- Redshift: Data warehousing
+
+### Azure
+- Azure SQL: Managed relational DB
+- Cosmos DB: Globally distributed NoSQL
+- Azure Data Lake: Analytics storage
+
+---
+
+## 💸 Cost Optimization
+
+### Best Practices
+- Use right-sizing tools
+- Purchase reserved instances
+- Use auto-scaling
+- Monitor via AWS Cost Explorer / Azure Cost Management
+- Tagging for cost tracking
+
+---
+
+## 🧠 Advanced Architecture Patterns
+
+### Microservices vs Monolith
+- Microservices: Independent, scalable, agile
+- Monolith: Unified codebase, tightly coupled
+
+### Event-Driven Architecture
+- Services react to events (S3, SNS, SQS, EventBridge)
+- Enables decoupling
+
+### CAP Theorem
+- Consistency, Availability, Partition Tolerance — pick two
+
+---
+
+## 🎯 Interview Prep: Advanced Questions
+
+1. Design a multi-region high-availability web app.
+2. Explain how VPC peering and Transit Gateway differ.
+3. How would you implement end-to-end security in a serverless app?
+4. When to use SNS vs SQS?
+5. Describe how you’d migrate a legacy system to the cloud.
+
+---
+
+## 📚 Ultimate Resource List
+
+### Hands-On Labs
+- AWS Skill Builder
+- Microsoft Learn
+- Qwiklabs & A Cloud Guru
+
+### Books
+- AWS Certified Solutions Architect Official Guide
+- Azure Administrator AZ-104 Guide
+- Cloud Design Patterns by Microsoft
+
+### YouTube Channels
+- AWS re:Invent Talks
+- Azure Friday
+- FreeCodeCamp AWS Full Course
+
+---
+
+Let me know if you want:
+- Architecture diagrams for these services
+- Cloud mock test PDF
+- Project plan using AWS/Azure combo stack
